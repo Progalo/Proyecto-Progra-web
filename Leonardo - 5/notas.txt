@@ -8,6 +8,8 @@ para que se muestren en cada pantalla
 
 falta agregarles el Menu - importar y acomodar
 
+/data debe estar dento de ./public
+
 //////////////DEPENDENCIAS//////////////
 npm install
 --------------------------------
