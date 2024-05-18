@@ -15,3 +15,6 @@ npm install react-router-dom
 --------------------------------
 para calendario:
 npm install react-datepicker
+--------------------------------
+crear ventanas de alertas llamativas:
+npm install sweetalert2
