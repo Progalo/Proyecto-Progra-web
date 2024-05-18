@@ -1,0 +1,28 @@
+#index - todo comentado
+app.jsx y main-jsx -> importantes revisar para entender el Routeado
+
+agregar los assets para el funcionamiento del footer
+
+en cada pantalla.jsx importe el Header y Footer
+para que se muestren en cada pantalla
+
+falta agregarles el Menu - importar y acomodar
+
+//////////////DEPENDENCIAS//////////////
+npm install
+--------------------------------
+navegacion de paginas:
+npm install react-router-dom
+--------------------------------
+para calendario:
+npm install react-datepicker
+--------------------------------
+////////////////////////////////////////
+
+en packge.json verificar que este asi:
+"dependencies": {
+    "react": "^18.2.0",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1"
+  },

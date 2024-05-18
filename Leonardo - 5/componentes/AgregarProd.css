@@ -1,0 +1,78 @@
+br + input{
+    border-radius: 15px;
+}
+
+br + textarea{
+    border-radius: 15px;
+}
+
+.form-header{
+    background-color: rgb(153, 150, 150);
+}
+
+#add-img, #save{
+    width: 15%;
+    margin:auto;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(211, 212, 212);
+    border:none;
+    font-weight: bold;
+    cursor:pointer
+}
+
+#add-img:hover, #save:hover{
+    border: 1px solid rgb(120, 128, 128);
+    background-color: rgb(169, 173, 173);
+}
+
+.image-preview img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.image-preview {
+    margin-bottom: 10px;
+}
+
+/*darle forma*/
+.conteiner-form {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+  }
+  
+.form-left {
+    width: 40%;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 600px;
+    align-items: center;
+    background-color: hotpink;
+}
+  
+.form-right {
+    width: 50%; 
+    float: right;
+    padding: 20px;
+    margin-left: 20px; 
+    background-color: lightblue;
+}
+
+.form-right-under {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-right-under p {
+    flex: 0 0 calc(50% - 10px); /* 50% de ancho - 10px de margen */
+    margin: 5px; /* Espacio entre los elementos */
+    box-sizing: border-box; /* Asegura que el margen se tenga en cuenta en el cálculo del ancho */
+  }
+  
+.form-footer {
+    clear: both;
+    background-color: black;
+    color: white;
+}

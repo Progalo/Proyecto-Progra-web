@@ -1,0 +1,39 @@
+.conteiner-dash{
+    background-color: rgb(78, 69, 69);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-header{
+    background-color: rgb(223, 219, 219);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos uno a cada extremo */
+    align-items: center;
+}
+
+.dash-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-sect{
+    background-color: thistle;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Divide el ancho en tres columnas con un margen de 20px entre ellas */
+    box-sizing: border-box;
+}
+
+.date-picker {
+    position: relative;
+}
+  
+.toggle-button {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+}
