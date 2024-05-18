@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: #5470ee;
+    width: 228px;
+    height: 624px;
+    overflow: hidden;
+    padding-right: 40px;
+    flex-shrink: 0;
+}
+
+.content {
+    background-color: #82a9dd;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    display: none;
+}
+
+.opcion-texto {
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
