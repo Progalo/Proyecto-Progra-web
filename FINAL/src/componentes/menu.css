@@ -13,7 +13,7 @@
     width: 100%; /* Ajustar el ancho según tus necesidades */
 }
 
-nav {
+.nav-menu {
     background-color: rgb(223, 219, 219);
     width: 228px;
     height: 624px;

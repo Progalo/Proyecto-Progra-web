@@ -19,8 +19,8 @@ function Header({ onSearch }) {  // Recibe la función onSearch como prop
         <div className="logo">
           <Link to="/">TuTienda</Link> {/* Enlace al logo que lleva a la página principal */}
         </div>
-        <nav>
-          <ul>
+        <nav className='nav-header-principal'>
+          <ul className='sectsPrincipal'>
             <li>
               <Link to="/mas-vendidos">Más Vendidos</Link> 
             </li>

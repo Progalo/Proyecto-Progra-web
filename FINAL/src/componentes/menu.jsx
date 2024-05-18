@@ -7,7 +7,7 @@ function Menu() {
     return(
         <div>
             <div className="navegador">
-                <nav>
+                <nav className="nav-menu">
                     <p style={{color: "black", paddingTop: "23px", paddingLeft:"29px", margin:"0px", fontSize:"20px", fontFamily:"sans-serif"}}>Admin</p>
                     <ul>
                         <li>

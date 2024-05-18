@@ -14,11 +14,12 @@ header {
 .logo {
 	width: fit-content;
 }
-nav {
+
+.nav-header-principal {
 	width: 60%;
 }
 
-ul {
+.sectsPrincipal {
 	display: flex;
 	gap: 24px;
 	list-style: none;
