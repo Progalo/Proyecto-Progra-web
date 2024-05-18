@@ -1,0 +1,4 @@
+const PR = () => {
+    return <h1>404</h1>;
+};
+export default PR;

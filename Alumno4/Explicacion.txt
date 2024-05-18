@@ -1,0 +1,17 @@
+En el arcivo app.jsx principal poner lo mismo que en el  app.jsx en esta carpeta para
+que el menu funcion.
+
+para cambiar los titulos del menu, acceder al archivo menu jsx
+para cambiar las rutas de los titulos del menu, camiarlos en la app.jsx del proyecto
+
+actualizar la importacion del footer y header en el archivo jsx.
+
+arreglar css de los archivos agregar_series.jsx y detalles de orden de usuario, se puede copiar o guiar de otras pantallas similares
+
+el css principal es el archivo alumno4.css
+
+Alumno 4: pantallas, Agregar_serie_admin, cambiar_contraseña_usuario, detalle_orden_usuario, Series(Lista_de_series_admin)
+
+El menu jsx se puede reutilizar para otras pantallas solo necesita modificacion
+
+responsable: Cesar Rodriguez, cualquier duda me escriben
