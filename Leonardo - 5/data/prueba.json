@@ -1,0 +1,25 @@
+[
+    {
+        "name": "lupi",
+        "descripcion": "hola soy lupi",
+        "url": "https://picsum.photos/id/237/200"
+    },
+
+    {
+        "name": "didi",
+        "descripcion":"ga",
+        "url": "https://picsum.photos/200/300?grayscale"
+    },
+
+    {
+        "name": "gaaaa",
+        "descripcion": "ok",
+        "url": "https://picsum.photos/seed/picsum/200"
+    },
+
+    {
+        "name": "tu vieja",
+        "descripcion": "calla cmsr",
+        "url": "https://picsum.photos/200"
+    }
+]

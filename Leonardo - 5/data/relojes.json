@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nombre": "Swatch",
+        "modelos":[
+            {
+                "Serie":"GAH",
+                "imagen" : "https://picsum.photos/id/237/200",
+                "precio" : 100,
+                "descripcion" :"aa",
+                "caracteristicas" :"a"
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "nombre": "NOSE",
+        "modelos":[
+            {
+                "Serie":"GAHhhhh",
+                "imagen" : "https://picsum.photos/id/237/200",
+                "precio" : 50,
+                "descripcion" :"b",
+                "caracteristicas" :"ab"
+            }
+        ]
+    }
+]
