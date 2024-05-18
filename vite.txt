@@ -1,0 +1,17 @@
+1. ir a cmd
+2. npm --version //verifica que este instalado
+3. npm create vite@latest
+4. "yes" - nombre
+5. "react" - "JavaScript"
+6. cd vite-project (nombre)
+7. npm install
+8. npm run dev
+--------------------------------
+axios: permite llamadas asincronas
+npm install axios
+--------------------------------
+navegacion de paginas:
+npm install react-router-dom
+--------------------------------
+para calendario:
+npm install react-datepicker
