@@ -3,6 +3,7 @@ import './AgregarProd.css'
 import data from '../../public/data/relojes.json'
 import Header from './Header'
 import Footer from './Footer'
+import Menu from './menu';
 
 
 const AgregarProd = () => {
@@ -69,126 +70,131 @@ const handleButtonClick = () => {
     fileInputRef.current.click();
 };
 
-  return (
+return (
     <>
-    <Header />
-    <div className='conteiner-form'>
-        <div className='form-header'>
-            <h3>Agregar Producto</h3>
-        </div>
-        <div className='form-left'>
-            <input
-                type="file"
-                id="cargarImagen"
-                accept="image/*"
-                style={{ display: 'none' }}
-                onChange={handleImageChange}
-                ref={fileInputRef}
-            />
-            
-            <div className="image-preview" >
-            {imagen ? (<img src={imagen} alt="" />) : 
-            (
-                <span>No hay imagen seleccionada</span>
-            )}
+        <Header />
+        <div className='main-container'>
+            <Menu />
+            <div className='content'>
+                <div className='conteiner-form'>
+                    <div className='form-header'>
+                        <h3>Agregar Producto</h3>
+                    </div>
+                    <div className='form-left'>
+                        <input
+                            type="file"
+                            id="cargarImagen"
+                            accept="image/*"
+                            style={{ display: 'none' }}
+                            onChange={handleImageChange}
+                            ref={fileInputRef}
+                        />
+
+                        <div className="image-preview">
+                            {imagen ? (<img src={imagen} alt="" />) :
+                                (
+                                    <span>No hay imagen seleccionada</span>
+                                )}
+                        </div>
+
+                        <input
+                            id="add-img"
+                            type="button"
+                            value="Agregar Imagen"
+                            onClick={handleButtonClick}
+                        />
+                    </div>
+                    <div className='form-right'>
+                        <form className='form-right-top' onSubmit={handleSubmit}>
+                            <p>
+                                <label>Nombre</label>
+                                <br></br>
+                                <input
+                                    id="add-nombre"
+                                    type="text"
+                                    value={nombre}
+                                    onChange={(e) => setNombre(e.target.value)}
+                                />
+                            </p>
+
+                            <p>
+                                <label>Descripcion</label>
+                                <br></br>
+                                <textarea
+                                    id="add-des"
+                                    rows="5"
+                                    cols="40"
+                                    maxLength="150"
+                                    value={descripcion}
+                                    onChange={(e) => setDescripcion(e.target.value)}
+                                />
+                            </p>
+
+                            <p>
+                                <label>Caracteristicas</label>
+                                <br></br>
+                                <textarea
+                                    id="add-des"
+                                    rows="7"
+                                    cols="40"
+                                    maxLength="150"
+                                    value={caracteristicas}
+                                    onChange={(e) => setCaracteristicas(e.target.value)}
+                                />
+                            </p>
+
+                            <div className='form-right-under'>
+                                <p>
+                                    <label>Marca:</label>
+                                    <br></br>
+                                    <input id="add-marc" type="text" />
+                                </p>
+
+                                <p>
+                                    <label>Serie:</label>
+                                    <br></br>
+                                    <input
+                                        id="add-serie"
+                                        type="text"
+                                        value={serie}
+                                        onChange={(e) => setSerie(e.target.value)}
+                                    />
+                                </p>
+
+                                <p>
+                                    <label>Precio:</label>
+                                    <br></br>
+                                    S/. <input
+                                        id="add-price"
+                                        type="text"
+                                        value={precio}
+                                        onChange={(e) => setPrecio(e.target.value)}
+                                    />
+                                </p>
+
+                                <p>
+                                    <label>Tipo:</label>
+                                    <br></br>
+                                    <input id="add-type" type="text" />
+                                </p>
+
+                                <p>
+                                    <label>Stock:</label>
+                                    <br></br>
+                                    <input id="add-stock" type="text" />
+                                </p>
+                            </div>
+                            <div /*className='form-footer'*/>
+                                <input id="save" type="submit" value="Guardar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <input 
-                id="add-img" 
-                type="button" 
-                value="Agregar Imagen"
-                onClick={handleButtonClick}
-            />
         </div>
-        <div className='form-right'>
-            <form className='form-right-top' onSubmit={handleSubmit}>
-                <p>
-                    <label>Nombre</label>
-                    <br></br>
-                    <input 
-                        id="add-nombre" 
-                        type="text" 
-                        value={nombre}
-                        onChange={(e) => setNombre(e.target.value)}
-                    />
-                </p>
-
-                <p>
-                    <label>Descripcion</label>
-                    <br></br>
-                    <textarea 
-                        id="add-des" 
-                        rows="5" 
-                        cols="40" 
-                        maxLength="150"
-                        value={descripcion}
-                        onChange={(e) => setDescripcion(e.target.value)}
-                    /> 
-                </p>
-
-                <p>
-                    <label>Caracteristicas</label>
-                    <br></br>
-                    <textarea
-                        id="add-des"
-                        rows="7"
-                        cols="40"
-                        maxLength="150"
-                        value={caracteristicas}
-                        onChange={(e) => setCaracteristicas(e.target.value)}
-                    /> 
-                </p>
-
-                <div className='form-right-under'>
-                <p>
-                    <label>Marca:</label>
-                    <br></br>
-                    <input id="add-marc" type="text" />
-                </p>
-
-                <p>
-                    <label>Serie:</label>
-                    <br></br>
-                    <input
-                        id="add-serie"
-                        type="text"
-                        value={serie}
-                        onChange={(e) => setSerie(e.target.value)}
-                    />
-                </p>
-
-                <p>
-                    <label>Precio:</label>
-                    <br></br>
-                    S/. <input
-                        id="add-price"
-                        type="text"
-                        value={precio}
-                        onChange={(e) => setPrecio(e.target.value)}
-                    />
-                </p>
-
-                <p>
-                    <label>Tipo:</label>
-                    <br></br>
-                    <input id="add-type" type="text" />
-                </p>
-
-                <p>
-                    <label>Stock:</label>
-                    <br></br>
-                    <input id="add-stock" type="text" />
-                </p>
-            </div>
-            <div /*className='form-footer'*/>
-                <input id="save" type="submit" value="Guardar"/> 
-            </div>
-            </form>
-        </div>
-    </div>
-    <Footer />
+        <Footer />
     </>
-  )
+)
 }
 
 export default AgregarProd

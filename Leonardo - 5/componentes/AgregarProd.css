@@ -34,6 +34,12 @@ br + textarea{
     margin-bottom: 10px;
 }
 
+/*menu*/
+.main-container {
+    display: flex; /* Utilizamos Flexbox para alinear los elementos horizontalmente */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+}
+
 /*darle forma*/
 .conteiner-form {
     text-align: left;
