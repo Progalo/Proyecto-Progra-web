@@ -21,8 +21,8 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-info">
-          <p>&copy; {new Date().getFullYear()} TuTienda. Todos los derechos reservados.</p>
-          {/* Agrega aquí información adicional como redes sociales, dirección, etc. */}
+          <p>&copy; {new Date().getFullYear()} La Tiendita del Abuelo. Todos los derechos reservados.</p>
+          {/* Agregar aquí información adicional como redes sociales, dirección, etc. */}
         </div>
       </div>
     </footer>
