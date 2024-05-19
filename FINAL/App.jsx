@@ -17,6 +17,8 @@ import Cart from './pages/cart';
 
 import CheckOut from "./pages/Checkout"
 /*import PedidoCompletado from "./pages/PedidoCompletado"*/
+
+import Ordenes from './pages/ordenes'
 /////////////////////////////////////////////////////////////
 
 
@@ -37,6 +39,7 @@ function App() {
         <Route path="/producto/:serieId" element={<ProductDetail />} />
         <Route path='/carrito' element={<Cart/>}/>
         <Route path='/checkout' element={<CheckOut/>}/>
+        <Route path='/ordenes' element={<Ordenes/>}/>
         
 
         <Route path="/dashbr" element= {<Dashboard />} />
