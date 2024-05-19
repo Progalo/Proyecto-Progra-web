@@ -50,3 +50,17 @@
 .series-results tbody td {
     padding: 10px;
 }
+
+.add-series-button {
+    background-color: #0a0a0a; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.add-series-button:hover {
+    background-color: #333;
+}

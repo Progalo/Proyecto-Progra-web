@@ -5,6 +5,7 @@ import AgregarProd from "./componentes/AgregarProd"
 import Dashboard from "./componentes/Dashboard"
 import ListProd from "./componentes/ListProd"
 import Series from "./componentes/Series"
+import AgregarSerie from "./componentes/AgregarSerie"
 
 //////////////////////////PRINCIPAL//////////////////////////
 import Home from './pages/home';
@@ -46,6 +47,8 @@ function App() {
         <Route path="/listPrd" element= {<ListProd />} />
         <Route path="/addPrd" element= {<AgregarProd />} />
         <Route path="/series" element= {<Series />} />
+        <Route path="/addseries" element= {<AgregarSerie />} />
+        
       </Routes>
     </div>
 
