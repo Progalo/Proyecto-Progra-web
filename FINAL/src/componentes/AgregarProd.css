@@ -8,6 +8,8 @@ br + textarea{
 
 .form-header{
     background-color: rgb(153, 150, 150);
+    padding: 20px;
+    margin-top: 10px;
 }
 
 #add-img, #save{

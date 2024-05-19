@@ -7,7 +7,7 @@
 
 .dash-header{
     background-color: rgb(223, 219, 219);
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between; /* Alinea los elementos uno a cada extremo */

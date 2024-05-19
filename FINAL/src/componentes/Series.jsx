@@ -59,8 +59,6 @@ const Series = () => {
                                     <tr>
                                         <th>ID</th>
                                         <th>Nombre</th>
-                                        <th>Serie</th>
-                                        <th>Precio</th>
                                         <th>Fecha de creación</th>
                                         <th>Stock</th>
                                         <th>Estado</th>
@@ -72,8 +70,6 @@ const Series = () => {
                                         <tr key={index}>
                                             <td>{reloj.id}</td>
                                             <td>{reloj.nombre}</td>
-                                            <td>{reloj.serie}</td>
-                                            <td>{reloj.precio}</td>
                                             <td>{reloj.fecha_registro}</td>
                                             <td>{reloj.stock}</td>
                                             <td>{reloj.estado}</td>
