@@ -1,8 +1,1 @@
-hay error en estilos
-
-//solucion?
-descomentar ./app.css en app y quitar los import de Principal
-lo solucion
-
-- al importar un .jsx de Principal cambian los estilos
-- comentar ./app.css cambia estilos de todo lo demas
+No funciona pedido completado

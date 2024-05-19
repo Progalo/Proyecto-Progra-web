@@ -14,6 +14,9 @@ import Ofertas from './pages/ofertas';
 import ResultadosBusqueda from './pages/resultadosBusqueda';
 import ProductDetail from './pages/productDetail';
 import Cart from './pages/cart';
+
+import CheckOut from "./pages/Checkout"
+/*import PedidoCompletado from "./pages/PedidoCompletado"*/
 /////////////////////////////////////////////////////////////
 
 
@@ -33,6 +36,8 @@ function App() {
         <Route path="/resultados" element={<ResultadosBusqueda />} />
         <Route path="/producto/:serieId" element={<ProductDetail />} />
         <Route path='/carrito' element={<Cart/>}/>
+        <Route path='/checkout' element={<CheckOut/>}/>
+        
 
         <Route path="/dashbr" element= {<Dashboard />} />
         <Route path="/listPrd" element= {<ListProd />} />

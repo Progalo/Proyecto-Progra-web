@@ -10,13 +10,34 @@ function ListProd() {
     const [currentPage, setCurrentPage] = useState(1); // Estado para la página actual
     const [relojesPerPage] = useState(10); // Número de relojes por página
 
-    // Función para cargar los relojes desde un archivo JSON (puedes modificar la ruta según tu estructura)
     useEffect(() => {
-        fetch('../data/relojes2.json') // Ruta a tu archivo JSON
-        .then(response => response.json())
-        .then(data => setRelojes(data))
-        .catch(error => console.error('Error fetching products', error));
+      fetch('../data/relojes.json') // Ruta a tu archivo JSON
+      .then(response => response.json())
+      .then(data => {
+          const relojesConIdModelo = data.flatMap(marca => 
+              marca.modelos.map(modelo => ({
+                id: marca.id,
+                  ...modelo,
+                  marca: marca.nombre,
+              }))
+          );
+          setRelojes(relojesConIdModelo);
+      })
+      .catch(error => console.error('Error fetching products', error));
     }, []);
+
+    //Funcion para cambiar estado
+    const handleDesactivar = (id) => {
+      const updatedRelojes = relojes.map(reloj => {
+        if (reloj.id === id) {
+          // Cambiar el estado entre "Activo" e "Inactivo"
+        const nuevoEstado = reloj.estado === "Activo" ? "Inactivo" : "Activo";
+        return { ...reloj, estado: nuevoEstado };
+        }
+        return reloj;
+      });
+      setRelojes(updatedRelojes);
+    };
 
     //////////////Logica para busqueda//////////////
     const [searchTerm, setSearchTerm] = useState("");
@@ -88,7 +109,13 @@ function ListProd() {
                       <td>{reloj.fecha_registro}</td>
                       <td>{reloj.stock}</td>
                       <td>{reloj.estado}</td>
-                      <td>Acciones...</td>
+                      <td>
+                        {reloj.estado === "Activo" ? (
+                          <button className="list-desc" onClick={() => handleDesactivar(reloj.id)}>Desactivar</button>
+                        ) : (
+                          "Inactivo"
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

@@ -3,6 +3,7 @@ import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import Swal from 'sweetalert2';
 
+
 const CartContext = createContext({
   cartItems: [],
   addToCart: () => {},
@@ -35,9 +36,13 @@ export const CartProvider = ({ children }) => {
   };
 
   return (
+    <>
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart}}>
       {children}
     </CartContext.Provider>
+    
+    </>
+
   );
 };
 

@@ -4,6 +4,7 @@ import CartContext from '../CartContext';
 
 import HeaderPrincipal from '../componentes/HeaderPrincipal';
 import FooterPrincipal from '../componentes/FooterPrincipal';
+import { Link } from "react-router-dom";
 
 function Cart() {
   const { cartItems, removeFromCart } = useContext(CartContext);
@@ -35,6 +36,9 @@ function Cart() {
             ))}
           </ul>
           <p className='Cart-Total'>Total: S/. {calculateTotal()}</p>
+          <div className="divCheckout">
+            <button type="button" id="CheckoutButton"><Link to="/checkout">CheckOut</Link></button>
+        </div>
         </>
       )}
     </div>
