@@ -11,7 +11,7 @@ function ListProd() {
     const [relojesPerPage] = useState(10); // Número de relojes por página
 
     useEffect(() => {
-      fetch('../data/relojes.json') // Ruta a tu archivo JSON
+      fetch('../data/relojes.json') // Ruta a archivo JSON
       .then(response => response.json())
       .then(data => {
           const relojesConIdModelo = data.flatMap(marca => 
