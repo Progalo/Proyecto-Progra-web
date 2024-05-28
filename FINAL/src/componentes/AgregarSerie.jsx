@@ -12,7 +12,7 @@ function AgregarSerie () {
     return(
         <>
         <Header />
-        <div>
+        <div className="main-container">
         <Menu />
         <div>
             <div className='titulos'>

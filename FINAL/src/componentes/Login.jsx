@@ -2,7 +2,6 @@ import React from 'react';
 import '../componentes/Login.css'
 import Header from './Header'
 import Footer from './Footer'
-import Menu from './menu';
 
 
 function Login(){
@@ -10,7 +9,6 @@ function Login(){
         <>
           <Header />
           <div className="main-container">
-            <Menu />
             <div className="content">
               <div className='wrapper'>
                 <form action="">
