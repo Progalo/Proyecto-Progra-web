@@ -14,7 +14,7 @@ function Menu() {
                             <Link to ="/dashbr">Dashboard</Link>
                         </li>
                         <li>
-                            <Link to="/Usuarios_Registrados">Usuarios registrados</Link>
+                            <Link to="/usureg">Usuarios registrados</Link>
                         </li>
                         <li>
                             <Link to="/listPrd">Productos</Link>

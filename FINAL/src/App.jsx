@@ -6,6 +6,7 @@ import Dashboard from "./componentes/Dashboard"
 import ListProd from "./componentes/ListProd"
 import Series from "./componentes/Series"
 import AgregarSerie from "./componentes/AgregarSerie"
+import UsuariosRegistrados from "./componentes/UsuariosRegistrados"
 
 //////////////////////////PRINCIPAL//////////////////////////
 import Home from './pages/home';
@@ -44,6 +45,7 @@ function App() {
         
 
         <Route path="/dashbr" element= {<Dashboard />} />
+        <Route path="/usureg" element= {<UsuariosRegistrados />} />
         <Route path="/listPrd" element= {<ListProd />} />
         <Route path="/addPrd" element= {<AgregarProd />} />
         <Route path="/series" element= {<Series />} />
