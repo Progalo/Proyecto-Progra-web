@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ordenesAdmin.css'; 
 import Header from './Header';
 import Footer from './Footer';
@@ -8,6 +9,7 @@ const OrdenesAdmin = () => {
     const [ordersData, setOrdersData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('/data/usuarios.json')
@@ -28,7 +30,7 @@ const OrdenesAdmin = () => {
             .catch(error => console.error('Error fetching the data:', error));
     }, []);
 
-    //Filtrar
+    // Filtrar
     const [searchTerm, setSearchTerm] = useState("");
 
     const filteredOrders = ordersData.filter(order =>
@@ -49,6 +51,10 @@ const OrdenesAdmin = () => {
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
+
+    const handleViewClick = (usuario) => {
+        navigate(`/ordAdmin/${usuario}`);
+    };
 
     return (
         <>
@@ -86,7 +92,7 @@ const OrdenesAdmin = () => {
                                         <td>{order.total}</td>
                                         <td>{order.correo}</td>
                                         <td>{order.estado}</td>
-                                        <td><a href="#">Ver</a></td>
+                                        <td><a href="#" onClick={() => handleViewClick(order.usuario)}>Ver</a></td>
                                     </tr>
                                 ))}
                             </tbody>

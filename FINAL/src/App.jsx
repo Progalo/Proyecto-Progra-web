@@ -8,6 +8,7 @@ import Series from "./componentes/Series"
 import AgregarSerie from "./componentes/AgregarSerie"
 import UsuariosRegistrados from "./componentes/UsuariosRegistrados"
 import OrdenesAdmin from "./componentes/ordenesAdmin"
+import userOrd from "./componentes/userOrd"
 
 //////////////////////////PRINCIPAL//////////////////////////
 import Home from './pages/home';
@@ -52,6 +53,7 @@ function App() {
         <Route path="/series" element= {<Series />} />
         <Route path="/addseries" element= {<AgregarSerie />} />
         <Route path="/ordAdmin" element= {<OrdenesAdmin />} />
+        <Route path="/ordAdmin/:usuario" element={<userOrd />} />
         
       </Routes>
     </div>
