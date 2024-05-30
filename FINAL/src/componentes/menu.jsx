@@ -21,7 +21,7 @@ function Menu() {
                             
                         </li>
                         <li>
-                            <Link to ="/Ordenes">Ordenes</Link>
+                            <Link to ="/ordAdmin">Ordenes</Link>
                         </li>
                         <li>
                             <Link to="/Productos_mas_vendidos">Productos más<br/> vendidos</Link>
