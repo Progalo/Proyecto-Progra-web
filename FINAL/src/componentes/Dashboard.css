@@ -1,39 +1,41 @@
-.conteiner-dash{
-    background-color: rgb(78, 69, 69);
-    padding: 20px;
+.main-container {
     display: flex;
-    flex-direction: column;
 }
 
-.dash-header{
-    background-color: rgb(223, 219, 219);
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between; /* Alinea los elementos uno a cada extremo */
-    align-items: center;
-}
-
-.dash-sections {
+.dashboard-header {
     display: flex;
     justify-content: space-between;
-}
-
-.dash-sect{
-    background-color: thistle;
+    width: 100%;
     padding: 20px;
-    width: calc(33.33% - 20px); /* Divide el ancho en tres columnas con un margen de 20px entre ellas */
-    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
 .date-picker {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
-  
-.toggle-button {
-    color: black;
-    cursor: pointer;
-    text-decoration: underline;
-    display: inline-block;
-    position: relative;
+
+.dashboard-metrics {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+.metric-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.metric-box h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.metric-box p {
+    margin: 0;
+    font-size: 1em;
 }
