@@ -6,8 +6,6 @@ import Dashboard from "./componentes/Dashboard"
 import ListProd from "./componentes/ListProd"
 import Series from "./componentes/Series"
 import AgregarSerie from "./componentes/AgregarSerie"
-import UsuariosRegistrados from "./componentes/UsuariosRegistrados"
-import OrdenesAdmin from "./componentes/ordenesAdmin"
 import userOrd from "./componentes/userOrd"
 
 //////////////////////////PRINCIPAL//////////////////////////
@@ -52,8 +50,6 @@ function App() {
         <Route path="/addPrd" element= {<AgregarProd />} />
         <Route path="/series" element= {<Series />} />
         <Route path="/addseries" element= {<AgregarSerie />} />
-        <Route path="/ordAdmin" element= {<OrdenesAdmin />} />
-        <Route path="/ordAdmin/:usuario" element={<userOrd />} />
         
       </Routes>
     </div>

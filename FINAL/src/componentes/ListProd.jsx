@@ -47,11 +47,6 @@ function ListProd() {
         reloj.id.toString().includes(searchTerm.toLowerCase())
     );
 
-    // Obtener índices de los relojes que se mostrarán en la página actual
-    const indexOfLastReloj = currentPage * relojesPerPage;
-    const indexOfFirstReloj = indexOfLastReloj - relojesPerPage;
-    const currentFilteredRelojes = filteredRelojes.slice(indexOfFirstReloj, indexOfLastReloj);
-
     // Función para cambiar de página
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
